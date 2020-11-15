@@ -19,9 +19,6 @@
 
 DEVICE_PATH := device/asus/obiwan
 
-# Bluetooth
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth/include
-
 # Build
 BUILD_BROKEN_DUP_RULES := true
 TARGET_OTA_ASSERT_DEVICE := ASUS_I003_1
