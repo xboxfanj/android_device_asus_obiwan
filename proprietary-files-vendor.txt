@@ -931,6 +931,7 @@ vendor/etc/permissions/android.hardware.location.gps.xml
 vendor/etc/permissions/android.hardware.nfc.hcef.xml
 vendor/etc/permissions/android.hardware.nfc.hce.xml
 vendor/etc/permissions/android.hardware.nfc.xml
+vendor/etc/permissions/android.hardware.opengles.aep.xml
 vendor/etc/permissions/android.hardware.sensor.accelerometer.xml
 vendor/etc/permissions/android.hardware.sensor.compass.xml
 vendor/etc/permissions/android.hardware.sensor.gyroscope.xml
@@ -944,6 +945,9 @@ vendor/etc/permissions/android.hardware.telephony.ims.xml
 vendor/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml
 vendor/etc/permissions/android.hardware.usb.accessory.xml
 vendor/etc/permissions/android.hardware.usb.host.xml
+vendor/etc/permissions/android.hardware.vulkan.compute-0.xml
+vendor/etc/permissions/android.hardware.vulkan.level-1.xml
+vendor/etc/permissions/android.hardware.vulkan.version-1_1.xml
 vendor/etc/permissions/android.hardware.wifi.aware.xml
 vendor/etc/permissions/android.hardware.wifi.direct.xml
 vendor/etc/permissions/android.hardware.wifi.passpoint.xml
@@ -1555,6 +1559,13 @@ vendor/lib64/DataSet/arch/DIT_List.cfg
 vendor/lib64/DataSet/ditSCidGen/msgchk.db
 vendor/lib64/DataSet/ispDB/ParameterDB.db
 vendor/lib64/deviceInfoServiceModule.so
+vendor/lib64/egl/eglSubDriverAndroid.so
+vendor/lib64/egl/libEGL_adreno.so
+vendor/lib64/egl/libGLESv1_CM_adreno.so
+vendor/lib64/egl/libGLESv2_adreno.so
+vendor/lib64/egl/libq3dtools_adreno.so
+vendor/lib64/egl/libq3dtools_esx.so
+vendor/lib64/egl/libQTapGLES.so
 vendor/lib64/ftm_fm_lib.so
 vendor/lib64/hal_libnfc.so
 vendor/lib64/hw/android.hardware.audio@2.0-impl.so
@@ -1655,6 +1666,8 @@ vendor/lib64/libbluetooth_audio_session_qti.so
 vendor/lib64/libbluetooth_audio_session.so
 vendor/lib64/libbt-hidlclient.so
 vendor/lib64/libbtnv.so
+vendor/lib64/libC2D2.so
+vendor/lib64/libc2d30_bltlib.so
 vendor/lib64/libc2dcolorconvert.so
 vendor/lib64/libcacertclient.so
 vendor/lib64/libcamera_nn_stub.so
@@ -1672,6 +1685,7 @@ vendor/lib64/libcamxtintlessalgo.so
 vendor/lib64/libcapiv2svacnn.so
 vendor/lib64/libcapiv2svarnn.so
 vendor/lib64/libcapiv2vop.so
+vendor/lib64/libCB.so
 vendor/lib64/libcdsp_default_listener.so
 vendor/lib64/libcdsprpc.so
 vendor/lib64/libcert_parse.wpa_s.so
@@ -1738,6 +1752,7 @@ vendor/lib64/libGPTEE_vendor.so
 vendor/lib64/libgpu_tonemapper.so
 vendor/lib64/libgralloccore.so
 vendor/lib64/libgrallocutils.so
+vendor/lib64/libgsl.so
 vendor/lib64/libhdcp1prov.so
 vendor/lib64/libhdcp2p2prov.so
 vendor/lib64/libhdcpsrm.so
@@ -1776,6 +1791,8 @@ vendor/lib64/liblbs_core.so
 vendor/lib64/liblearningmodule.so
 vendor/lib64/liblistenjni.so
 vendor/lib64/liblistensoundmodel2.so
+vendor/lib64/libllvm-glnext.so
+vendor/lib64/libllvm-qcom.so
 vendor/lib64/libloadalgo_stub.so
 vendor/lib64/libloc_api_v02.so
 vendor/lib64/liblocation_api.so
@@ -1841,6 +1858,7 @@ vendor/lib64/libOmxVdec.so
 vendor/lib64/libOmxVenc.so
 vendor/lib64/libOmxVpp.so
 vendor/lib64/libOmxWmaDec.so
+vendor/lib64/libOpenCL.so
 vendor/lib64/libopenvx.so
 vendor/lib64/libops.so
 vendor/lib64/libos.so
@@ -2286,6 +2304,13 @@ vendor/lib/com.qualcomm.qti.imscmservice@2.1.so
 vendor/lib/com.qualcomm.qti.imscmservice@2.2.so
 vendor/lib/com.qualcomm.qti.uceservice@2.0.so
 vendor/lib/com.qualcomm.qti.uceservice@2.1.so
+vendor/lib/egl/eglSubDriverAndroid.so
+vendor/lib/egl/libEGL_adreno.so
+vendor/lib/egl/libGLESv1_CM_adreno.so
+vendor/lib/egl/libGLESv2_adreno.so
+vendor/lib/egl/libq3dtools_adreno.so
+vendor/lib/egl/libq3dtools_esx.so
+vendor/lib/egl/libQTapGLES.so
 vendor/lib/ftm_fm_lib.so
 vendor/lib/hal_libnfc.so
 vendor/lib/hw/android.hardware.audio@2.0-impl.so
@@ -2338,6 +2363,7 @@ vendor/lib/hw/vendor.qti.hardware.scve.objecttracker@1.0-impl.so
 vendor/lib/hw/vendor.qti.hardware.scve.panorama@1.0-impl.so
 vendor/lib/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so
 vendor/lib/hw/vendor.qti.hardware.soter@1.0-impl.so
+vendor/lib/hw/vulkan.kona.so
 vendor/lib/liba2dpoffload.so
 vendor/lib/libacdb-fts.so
 vendor/lib/libacdbloader.so
@@ -2374,6 +2400,8 @@ vendor/lib/libbluetooth_audio_session_qti.so
 vendor/lib/libbluetooth_audio_session.so
 vendor/lib/libbt-hidlclient.so
 vendor/lib/libbtnv.so
+vendor/lib/libC2D2.so
+vendor/lib/libc2d30_bltlib.so
 vendor/lib/libc2dcolorconvert.so
 vendor/lib/libcacertclient.so
 vendor/lib/libcamera_nn_stub.so
@@ -2391,6 +2419,7 @@ vendor/lib/libcamxtintlessalgo.so
 vendor/lib/libcapiv2svacnn.so
 vendor/lib/libcapiv2svarnn.so
 vendor/lib/libcapiv2vop.so
+vendor/lib/libCB.so
 vendor/lib/libcdsp_default_listener.so
 vendor/lib/libcdsprpc.so
 vendor/lib/libcert_parse.wpa_s.so
@@ -2459,6 +2488,7 @@ vendor/lib/libgps.utils.so
 vendor/lib/libGPTEE_vendor.so
 vendor/lib/libgralloccore.so
 vendor/lib/libgrallocutils.so
+vendor/lib/libgsl.so
 vendor/lib/libhdcp1prov.so
 vendor/lib/libhdcp2p2prov.so
 vendor/lib/libhdcpsrm.so
@@ -2492,6 +2522,8 @@ vendor/lib/libkeymasterutils.so
 vendor/lib/liblbs_core.so
 vendor/lib/liblistenjni.so
 vendor/lib/liblistensoundmodel2.so
+vendor/lib/libllvm-glnext.so
+vendor/lib/libllvm-qcom.so
 vendor/lib/libloc_api_v02.so
 vendor/lib/liblocation_api.so
 vendor/lib/liblocationservice_glue.so
@@ -2556,6 +2588,7 @@ vendor/lib/libOmxVenc.so
 vendor/lib/libOmxVideoDSMode.so
 vendor/lib/libOmxVpp.so
 vendor/lib/libOmxWmaDec.so
+vendor/lib/libOpenCL.so
 vendor/lib/libopenvx.so
 vendor/lib/libops.so
 vendor/lib/libopus.so
